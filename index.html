@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Change Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Change Calculator</h1>
+      <img src="https://pngimg.com/uploads/money/money_PNG3537.png" 
+      alt="Money Bag" class="money-bag">
+    </header>
+    <main>
+      <form id="change-form">
+        <h2>Calculate Your Change</h2>
+        <label for="amount-due">Amount Due:</label>
+        <input type="number" id="amount-due" placeholder="Enter amount due" step="0.01" required>
+        
+        <label for="amount-received">Amount Received:</label>
+        <input type="number" id="amount-received" placeholder="Enter amount received" step="0.01" required>
+        
+        <button type="button" id="calculate-change">Calculate Change</button>
+      </form>
+
+      <h2>Change Breakdown</h2>
+      <div class="change-container">
+        <div class="coin-box">
+          <p>💵 Dollars</p>
+          <span id="dollars-output">0</span>
+        </div>
+        <div class="coin-box">
+          <p>🪙 Quarters</p>
+          <span id="quarters-output">0</span>
+        </div>
+        <div class="coin-box">
+          <p>🪙 Dimes</p>
+          <span id="dimes-output">0</span>
+        </div>
+        <div class="coin-box">
+          <p>🪙 Nickels</p>
+          <span id="nickels-output">0</span>
+        </div>
+        <div class="coin-box">
+          <p>🪙 Pennies</p>
+          <span id="pennies-output">0</span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Change Calculator. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

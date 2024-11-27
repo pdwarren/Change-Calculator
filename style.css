@@ -1,0 +1,182 @@
+/* Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    background-color: #c7c8c8;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+    background-image: url('https://wallpapers.com/images/featured/coffee-shop-background-02x9a49rdcr5c18i.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    margin-bottom: 20rem;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #000000;
+    max-width: 400px; 
+    position: fixed;
+    align-items: center;  /* Positioning the header absolutely */
+    transform: translate(-50%, 50%); /* Center vertically in the corner */
+    max-width: 200px;
+    text-align: center;
+    border-bottom: 15px solid #000000; /* Underline with green color */
+    padding-bottom: -5rem; /* Add some space between text and underline */
+    letter-spacing: -3px; 
+}
+
+.money-bag {
+    width: 400px; /* Adjust size as needed */
+    height: auto;
+    position: fixed;
+    right: 0rem; /* Push image 1rem from the right edge */
+    top: 50%; /* Position image vertically in the middle */
+    transform: translateY(-50%); /* Center it perfectly */
+}
+
+
+header p {
+    font-size: 2rem;
+    color: #b00020;
+}
+
+/* Centered Card Container */
+main {
+    background: rgba(247, 247, 247, 0.7); /* Add transparency with rgba */
+    padding: 1.0rem; /* Reduce padding for less height */
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px; /* Increase maximum width */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Subheading */
+main h2 {
+    font-size: 1.6rem;
+    color: #250997;
+    margin-bottom: 1.5rem;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #000000;
+    text-align: left;
+}
+
+form input, form select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f9f9f9;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+}
+
+form input:focus, form select:focus {
+    border-color: #367c39;
+    background: #fff;
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #8b0397;
+}
+
+/* Result Styling */
+#result {
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: #329e36;
+    font-weight: bold;
+}
+.change-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .coin-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #cccccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .coin-box p {
+    font-size: 1rem;
+    margin: 0 0 10px;
+  }
+  
+  .coin-box span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+
+/* Footer Styling */
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 480px) {
+    main {
+        padding: 1.5rem;
+    }
+
+    form input, form select, button {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+}
